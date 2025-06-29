@@ -35,7 +35,7 @@ bot.on("message", async (msg) => {
 
       bot.sendMessage(chatId, `✅ Raqamingiz muvaffaqiyatli saqlandi.`);
     } catch (error) {
-      const message = `${error?.response?.data?.message} ( /start )` || "❌ Xatolik yuz berdi.  ( /start )";
+      const message = `${error?.response?.data?.message} ( /start ) ` || "❌ Xatolik yuz berdi.  ( /start )";
       bot.sendMessage(chatId, message);
     }
 
