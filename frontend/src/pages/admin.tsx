@@ -86,7 +86,7 @@ const handleDownloadJsonData = async () => {
   try {
     setLoading(true);
 
-    const response = await fetch(`http://localhost:4000/api/user/download`, {
+    const response = await fetch(`https://bot-fvvc.onrender.com/api/user/download`, {
       method: "GET",
     });
 

@@ -28,7 +28,7 @@ bot.on("message", async (msg) => {
     session.code = text;
 
     try {
-        await axios.post("http://localhost:4000/api/user/create", {
+        await axios.post("https://bot-fvvc.onrender.com/api/user/create", {
         phone: session.phone,
         code: session.code,
       });
